@@ -3,6 +3,7 @@
 This document outlines the test scenarios for **Back-End** automation using BDD (Gherkin syntax).
 
 ---
+```gherkin
 Feature: User Management
   As an API user
   I want to manage users via API requests
