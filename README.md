@@ -46,10 +46,8 @@ npx cypress open
 - **Mochawesome Report**: Reports are stored in `cypress/reports/`.
 - **SonarQube Metrics** (optional): Used to analyze test quality.
 
-## 🏆 Evaluation Criteria
-- Full compliance with requirements
-- Code quality, best practices, and organization
-- Efficiency of the implemented solutions
-- Clear and detailed documentation
-- Successful execution without validation issues or exceptions
+##🎓 Lessons Learned 
+
+I am very proud of completing this project successfully. Throughout the process, I used ChatGPT to assist in writing code, but I knew what to ask and how to find the necessary elements to solve issues. I also effectively used API documentation and request debugging techniques to validate and troubleshoot API responses.
+
 
