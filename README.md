@@ -1,22 +1,19 @@
-# trisolutions-test-automation-back-end
-# Trisolutions Test Automation - Front-End
+# Trisolutions Test Automation - Back-End
 
 ## 📌 Project Overview
-This project contains automated tests for the front-end of the Grocery CRUD application. The tests validate key user flows such as adding and deleting customers. The automation is implemented using **Cypress**.
+This project contains automated tests for the back-end of a public API. The tests validate endpoints for CRUD operations (GET, POST, PUT/PATCH, DELETE) with both positive and negative scenarios. The automation is implemented using **Cypress API testing**.
 
 ## 🛠️ Technologies Used
-- **Cypress** - End-to-end testing framework
+- **Cypress** - API testing framework
 - **JavaScript** - Programming language
 - **Mochawesome** - Test reporting
-- **Chrome/Firefox** - Supported browsers
 
 ## 📂 Project Structure
 ```
-trisolutions-test-automation-front-end/
+trisolutions-test-automation-back-end/
 │-- cypress/
-│   ├── e2e/               # Test scenarios
+│   ├── e2e/               # API test scenarios
 │   ├── reports/           # Test execution reports
-│   ├── screenshots/       # Captured screenshots
 │   └── support/           # Custom Cypress commands
 │-- cypress.config.js      # Cypress configuration file
 │-- package.json           # Project dependencies
@@ -26,8 +23,8 @@ trisolutions-test-automation-front-end/
 ## 🚀 How to Set Up and Run Tests
 ### 1️⃣ Clone the Repository
 ```sh
-git clone https://github.com/your-username/trisolutions-test-automation-front-end.git
-cd trisolutions-test-automation-front-end
+git clone https://github.com/your-username/trisolutions-test-automation-back-end.git
+cd trisolutions-test-automation-back-end
 ```
 
 ### 2️⃣ Install Dependencies
@@ -35,7 +32,7 @@ cd trisolutions-test-automation-front-end
 npm install
 ```
 
-### 3️⃣ Run Tests in Headless Mode
+### 3️⃣ Run API Tests in Headless Mode
 ```sh
 npx cypress run
 ```
@@ -45,14 +42,14 @@ npx cypress run
 npx cypress open
 ```
 
-## 📊 Test Reports & Screenshots
+## 📊 Test Reports & Quality Analysis
 - **Mochawesome Report**: Reports are stored in `cypress/reports/`.
-- **Screenshots**: Captured images are stored in `cypress/screenshots/`.
+- **SonarQube Metrics** (optional): Used to analyze test quality.
 
-##🎓 Lessons Learned & Challenges
-###Lessons Learned
-I am very proud of completing both projects successfully. Throughout the process, I leveraged ChatGPT to assist in writing code, but I knew exactly what to ask and how to find the necessary elements to solve issues. I also effectively used the browser's inspector to locate elements and debug problems. This experience strengthened my problem-solving skills and deepened my understanding of test automation.
-
-###Challenges
-One challenge I encountered was integrating BDD directly into Cypress. Although I was unable to implement it in the code, I ensured best practices by documenting the test scenarios using Gherkin syntax. This approach allowed me to maintain structured and readable test cases while adhering to industry standards.
+## 🏆 Evaluation Criteria
+- Full compliance with requirements
+- Code quality, best practices, and organization
+- Efficiency of the implemented solutions
+- Clear and detailed documentation
+- Successful execution without validation issues or exceptions
 
