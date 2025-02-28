@@ -3,55 +3,55 @@
 This document outlines the test scenarios for **Back-End** automation using BDD (Gherkin syntax).
 
 ---
-```gherkin
-Feature: Retrieve customer information
+Feature: User Management
+  As an API user
+  I want to manage users via API requests
+  So that I can retrieve, create, update, and delete user information
 
-  Scenario: Successfully retrieving customer data
-    Given the API is available at "https://jsonplaceholder.typicode.com/users"
-    When I send a GET request to "/users/1"
-    Then the response status should be 200
-    And the response should contain customer details
+  Scenario: Retrieve an existing user
+    Given the user API is available
+    When I request a user by ID
+    Then the response should contain the user details
+    And the status code should be 200
 
-  Scenario: Attempting to retrieve a non-existent customer
-    Given the API is available at "https://jsonplaceholder.typicode.com/users"
-    When I send a GET request to "/users/9999"
-    Then the response status should be 404
+  Scenario: Retrieve a non-existing user
+    Given the user API is available
+    When I request a user with a non-existent ID
+    Then the response should return an error message
+    And the status code should be 404
 
-Feature: Add a new customer via API
+  Scenario: Create a new user
+    Given the user API is available
+    When I send a request to create a user with valid data
+    Then the response should confirm the user was created
+    And the status code should be 201
 
-  Scenario: Successfully creating a new customer
-    Given the API is available at "https://jsonplaceholder.typicode.com/users"
-    When I send a POST request to "/users" with valid customer data
-    Then the response status should be 201
-    And the response should contain the created customer details
+  Scenario: Fail to create a user with invalid data
+    Given the user API is available
+    When I send a request to create a user with invalid data
+    Then the response should contain an error message
+    And the status code should be 400
 
-  Scenario: Attempting to create a customer with missing data
-    Given the API is available at "https://jsonplaceholder.typicode.com/users"
-    When I send a POST request to "/users" with incomplete data
-    Then the response status should be 400
+  Scenario: Update user details
+    Given an existing user in the system
+    When I send a request to update the user’s information
+    Then the response should confirm the update was successful
+    And the status code should be 200
 
-Feature: Update customer information
+  Scenario: Fail to update a non-existing user
+    Given the user API is available
+    When I send a request to update a non-existent user
+    Then the response should contain an error message
+    And the status code should be 404
 
-  Scenario: Successfully updating customer data
-    Given a customer exists with ID "1"
-    When I send a PUT request to "/users/1" with updated information
-    Then the response status should be 200
-    And the response should reflect the updated customer details
+  Scenario: Remove a user from the system
+    Given an existing user in the system
+    When I send a request to delete the user
+    Then the response should confirm the user was removed
+    And the status code should be 200
 
-  Scenario: Attempting to update a non-existent customer
-    Given no customer exists with ID "9999"
-    When I send a PUT request to "/users/9999"
-    Then the response status should be 404
-
-Feature: Remove a customer via API
-
-  Scenario: Successfully deleting a customer
-    Given a customer exists with ID "1"
-    When I send a DELETE request to "/users/1"
-    Then the response status should be 200
-
-  Scenario: Attempting to delete a non-existent customer
-    Given no customer exists with ID "9999"
-    When I send a DELETE request to "/users/9999"
-    Then the response status should be 404
-
+  Scenario: Fail to remove a non-existing user
+    Given the user API is available
+    When I send a request to delete a non-existent user
+    Then the response should contain an error message
+    And the status code should be 404
