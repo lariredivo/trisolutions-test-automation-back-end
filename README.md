@@ -58,4 +58,4 @@ I am very proud of completing this project successfully. Throughout the process,
 
 
 ## 📜 Test Scenarios
-Check [TEST_SCENARIOS.md](https://github.com/lariredivo/trisolutions-test-automation-front-end/blob/main/TEST_SCENARIOS.md) for details.
+Check [TEST_SCENARIOS.md](https://github.com/lariredivo/trisolutions-test-automation-back-end/blob/main/TEST_SCENARIOS.md) for details.
