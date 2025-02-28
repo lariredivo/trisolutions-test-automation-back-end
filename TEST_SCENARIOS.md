@@ -4,8 +4,7 @@ This document outlines the test scenarios for **Back-End** automation using BDD 
 
 ---
 ```gherkin
-Feature: Retrieve customer information**
-
+Feature: Retrieve customer information
 
   Scenario: Successfully retrieving customer data
     Given the API is available at "https://jsonplaceholder.typicode.com/users"
