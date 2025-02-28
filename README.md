@@ -1,14 +1,14 @@
 # Trisolutions Test Automation - Back-End
 
-## 📌 Project Overview
+## Project overview
 This project contains automated tests for the back-end of a public API. The tests validate endpoints for CRUD operations (GET, POST, PUT/PATCH, DELETE) with both positive and negative scenarios. The automation is implemented using **Cypress API testing**.
 
-## 🛠️ Technologies Used
+## Technologies used
 - **Cypress** - API testing framework
 - **JavaScript** - Programming language
 - **Mochawesome** - Test reporting
 
-## 📂 Project Structure
+## Project structure
 ```
 trisolutions-test-automation-back-end/
 │-- cypress/
@@ -20,29 +20,29 @@ trisolutions-test-automation-back-end/
 │-- README.md              # Project documentation
 ```
 
-## 🚀 How to Set Up and Run Tests
-### 1️⃣ Clone the Repository
+## How to set up and run tests
+### 1️ Clone the repository
 ```sh
 git clone https://github.com/your-username/trisolutions-test-automation-back-end.git
 cd trisolutions-test-automation-back-end
 ```
 
-### 2️⃣ Install Dependencies
+### 2️ Install dependencies
 ```sh
 npm install
 ```
 
-### 3️⃣ Run API Tests in Headless Mode
+### 3️ Run API tests in headless mode
 ```sh
 npx cypress run
 ```
 
-### 4️⃣ Run Tests with Cypress UI
+### 4 Run tests with Cypress UI
 ```sh
 npx cypress open
 ```
 
-## 📊 Test Reports & Screenshots
+### Test reports & screenshots
 - **Mochawesome Report**: Reports are stored in `cypress/reports/`.
 - **Screenshots**: Captured images are stored in `cypress/screenshots/`.
 - To merge reports and generate an HTML file, run:
@@ -52,10 +52,5 @@ npx marge cypress/reports/report.json -o cypress/reports/
 ```
 - Open `cypress/reports/index.html` in your browser.
 
-
-## 🎓 Lessons Learned 
-I am very proud of completing this project successfully. Throughout the process, I used ChatGPT to assist in writing code, but I knew what to ask and how to find the necessary elements to solve issues. I also effectively used API documentation and request debugging techniques to validate and troubleshoot API responses.
-
-
-## 📜 Test Scenarios
+### Test scenarios
 Check [TEST_SCENARIOS.md](https://github.com/lariredivo/trisolutions-test-automation-back-end/blob/main/TEST_SCENARIOS.md) for details.
