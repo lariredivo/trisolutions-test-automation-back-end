@@ -42,14 +42,15 @@ npx cypress run
 npx cypress open
 ```
 
-## 📊 Test Reports & Quality Analysis
+## 📊 Test Reports & Screenshots
 - **Mochawesome Report**: Reports are stored in `cypress/reports/`.
-- **SonarQube Metrics** (optional): Used to analyze test quality.
+- **Screenshots**: Captured images are stored in `cypress/screenshots/`.
+- To merge reports and generate an HTML file, run:
+```sh
+npx mochawesome-merge cypress/reports/*.json -o cypress/reports/report.json
+npx marge cypress/reports/report.json -o cypress/reports/
+```
+- Open cypress/reports/index.html in your browser.
 
-## 🏆 Evaluation Criteria
-- Full compliance with requirements
-- Code quality, best practices, and organization
-- Efficiency of the implemented solutions
-- Clear and detailed documentation
-- Successful execution without validation issues or exceptions
-
+## 📜 Test Scenarios
+Check [TEST_SCENARIOS.md](https://github.com/lariredivo/trisolutions-test-automation-front-end/blob/main/TEST_SCENARIOS.md) for details.
