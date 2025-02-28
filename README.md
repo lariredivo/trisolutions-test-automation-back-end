@@ -44,10 +44,14 @@ npx cypress open
 
 ## 📊 Test Reports & Quality Analysis
 - **Mochawesome Report**: Reports are stored in `cypress/reports/`.
-- **SonarQube Metrics** (optional): Used to analyze test quality.
+- To merge reports and generate an HTML file, run:
+```sh
+npx mochawesome-merge cypress/reports/*.json -o cypress/reports/report.json
+npx marge cypress/reports/report.json -o cypress/reports/
+Open cypress/reports/index.html in your browser.
+```
 
-##🎓 Lessons Learned 
-
+## 🎓 Lessons Learned 
 I am very proud of completing this project successfully. Throughout the process, I used ChatGPT to assist in writing code, but I knew what to ask and how to find the necessary elements to solve issues. I also effectively used API documentation and request debugging techniques to validate and troubleshoot API responses.
 
 
