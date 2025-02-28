@@ -48,8 +48,9 @@ npx cypress open
 ```sh
 npx mochawesome-merge cypress/reports/*.json -o cypress/reports/report.json
 npx marge cypress/reports/report.json -o cypress/reports/
-Open cypress/reports/index.html in your browser.
 ```
+- Open `cypress/reports/index.html` in your browser.
+
 
 ## 🎓 Lessons Learned 
 I am very proud of completing this project successfully. Throughout the process, I used ChatGPT to assist in writing code, but I knew what to ask and how to find the necessary elements to solve issues. I also effectively used API documentation and request debugging techniques to validate and troubleshoot API responses.
