@@ -49,16 +49,10 @@ npx cypress open
 - **Mochawesome Report**: Reports are stored in `cypress/reports/`.
 - **Screenshots**: Captured images are stored in `cypress/screenshots/`.
 
-## 🏆 Evaluation Criteria
-- Full compliance with requirements
-- Code quality, best practices, and organization
-- Efficiency of the implemented solutions
-- Clear and detailed documentation
-- Successful execution without validation issues or exceptions
+##🎓 Lessons Learned & Challenges
+###Lessons Learned
+I am very proud of completing both projects successfully. Throughout the process, I leveraged ChatGPT to assist in writing code, but I knew exactly what to ask and how to find the necessary elements to solve issues. I also effectively used the browser's inspector to locate elements and debug problems. This experience strengthened my problem-solving skills and deepened my understanding of test automation.
 
-## 📜 License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
+###Challenges
+One challenge I encountered was integrating BDD directly into Cypress. Although I was unable to implement it in the code, I ensured best practices by documenting the test scenarios using Gherkin syntax. This approach allowed me to maintain structured and readable test cases while adhering to industry standards.
 
